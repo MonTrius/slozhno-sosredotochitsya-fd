@@ -3,7 +3,6 @@
 .page {
   font-family: "IBM Plex Mono";
   background-color: var(--bg-color);
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
@@ -105,7 +104,8 @@
 }
 
 .header__theme-menu-button {
-  border: none;
+  border: 1px solid transparent;
+  outline: none;
   font-family: "IBM Plex Mono";
   font-weight: 400;
   font-size: 18px;
@@ -114,14 +114,103 @@
 }
 
 .header__theme-menu-button:hover {
-  text-decoration: underline;
-  text-underline-position: under;
+  border: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button:focus {
-  outline: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
-.header__theme-menu-button:focus-visible {
-  outline: 1px solid var(--accent-color);
+.content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/*.section__stress {
+  height: 100vh;
+  min-height: 949px;
+}
+  Пока секции этого же типа заморожу, потому что без них
+  можно, но может потом пригодятся.
+*/
+
+.section__general {
+  margin-bottom: 50px;
+}
+
+.description__general {
+  display: grid;
+ /* grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr)); */
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.section__title {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'IBM Plex Mono';
+}
+
+.main-card__general {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'IBM Plex Mono';
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+  align-self: stretch;
+}
+
+.card__title-text {
+  font-weight: 400;
+}
+
+.card__text {
+  color: #F1B2CE;
+  line-height: 1.303;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'IBM Plex Mono';
+  margin-top: 10px;
+}
+
+.highlighted__link {
+  text-shadow: 2px 1px 0 var(--accent-color);
+}
+
+.text__link {
+  text-decoration: none;
+}
+
+.text__link:hover{
+  border-bottom: 1px solid #F1B2CE;
+}
+
+.text__link:focus {
+  outline: 1px solid #F1B2CE;
+}
+.text__link:focus-visible {
+  border-bottom: none;
+}
+
+/*.section__pictures {
+  height: 100vh;
+  min-height: 1400px;
+}
+*/
+
+.card__image {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.images__general {
+  gap: 10px;
 }

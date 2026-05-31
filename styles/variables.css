@@ -1,4 +1,11 @@
 :root {
+  --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --accent-color: #ff0070;
+  --main-title-color: #db00ff;
+  --title-color: #000028;
+  --text-color: #f1b2ce;
+  --decorated-color: var(--accent-color);
   --browser-height: 100vh;
   --height-phone: 668px;
   --main-padding: 10px;
@@ -6,4 +13,5 @@
   --font-weight: 400;
   --font-weight-bold: 700;
   --font-size: 18px;
+  --display-element: block;
 }

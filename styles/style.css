@@ -116,10 +116,11 @@
   text-transform: lowercase;
   background-color: transparent;
   padding: 0 13px;
+  transition: 0.2s;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--decorated-color);
+  border: 1px solid var(--button-color);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -288,7 +289,8 @@
 
   .header__title-text {
     justify-self: end;
-    inline-size: 364px;
+    max-width: 364px;
+    width: 100%;
   }
 
   .content {
@@ -309,7 +311,8 @@
   }
 
   .section__title {
-    inline-size: 236px;
+    max-width: 236px;
+    width: 100%;
   }
 
   .images__general {
@@ -357,7 +360,8 @@
 
 @media (width >= 1024px) {
   .header__title-text {
-    inline-size: 491px;
+    max-width: 491px;
+    width: 100%;
   }
 
   .header {
@@ -376,7 +380,8 @@
   }
 
   .section__title {
-    inline-size: 315px;
+    max-width: 315px;
+    width: 100%;
   }
 
   .card__position {
@@ -390,11 +395,8 @@
   .section__title-secondary {
     grid-column: 1 / 4;
   }
-
-  /*Удивило в figma 1024 x 768 - light, 
-  что у footer цвет shadow другой*/
   
   .footer__title-shadow {
-    text-shadow: 2px 2px 0 var(--footer-secondary-color);
+    text-shadow: 2px 2px 0 var(--accent-color);
   }
 }

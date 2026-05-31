@@ -6,7 +6,8 @@
   --title-color: #353430;
   --text-color: #353430;
   --decorated-color: var(--text-color);
-  --footer-secondary-color: #FF0070;
+  --button-color: rgba(50, 49, 45, 0.4);
+  --display-element: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,7 +19,7 @@
     --title-color: #353430;
     --text-color: #353430;
     --decorated-color: var(--text-color);
-    --footer-secondary-color: #FF0070;
+    --button-color: rgba(50, 49, 45, 0.4);
     --display-element: none;
   }
 }
